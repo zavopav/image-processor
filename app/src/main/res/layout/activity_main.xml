@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        tools:context="com.zp.imageprocessor.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:theme="@style/AppTheme.AppBarOverlay">
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_main"/>
+    <Button
+            android:text="@string/button.text.reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/reset_button" android:layout_weight="1"
+            android:onClick="reset (MainActivity)" app:layout_anchorGravity="bottom|center_horizontal"
+            android:layout_gravity="bottom|right"/>
+    <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:id="@+id/filter_picker" android:entries="@array/effects"/>
+    <Button
+            android:text="@string/button.text.process"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/process_button" app:layout_anchorGravity="bottom|left"
+            android:layout_gravity="bottom|left" android:onClick="processImage (MainActivity)"/>
+
+</android.support.design.widget.CoordinatorLayout>

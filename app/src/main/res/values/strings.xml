@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Image Processor</string>
+    <string name="action_settings">Settings</string>
+    <string name="content.description.moto">Moto</string>
+    <string name="content.description.present">Present</string>
+    <string name="content.description.sherlock">Sherlock</string>
+    <string name="content.description.tim_burton">Tim Burton</string>
+    <string name="button.text.reset">Reset</string>
+    <string name="button.text.process">Process</string>
+    <string-array name="effects">
+        <item>Sepia</item>
+        <item>Black/White</item>
+        <item>Negate</item>
+        <item>Darken</item>
+    </string-array>
+</resources>
